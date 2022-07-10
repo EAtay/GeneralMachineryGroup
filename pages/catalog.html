@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../index.css">
-
 </head>
 
 <body>
@@ -15,11 +14,14 @@
         <div class="header__container">
             <div class="header__logo">
                 <a href="/">
-                    <img src="../assets/img/logo.png" alt="logo">
+                    <img src="../assets/img/logo.png" class="logo-header" alt="logo">
                 </a>
             </div>
             <nav class="header__nav">
-                <ul>
+                <div class="logo__nav">
+                    <img src="../assets/img/logo.png" alt="logo-nav">
+                </div>
+                <ul class="navbar__ul">
                     <li class="nav-item">
                         <a href="/"> Спец техника</a>
                     </li>
@@ -39,9 +41,15 @@
                     </li>
                 </ul>
             </nav>
+            <div class="burger__btn">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+            </div>
         </div>
     </header>
     <h1>Catalog</h1>
+    <script type="module" src="../index.js"></script>
 
 </body>
 
