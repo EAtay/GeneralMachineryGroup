@@ -294,6 +294,7 @@ header {
 }
 
 .track-btn {
+    margin: 36px 0;
     border-radius: 0;
     background: #B20A09;
     padding: 18px 32px;
@@ -313,7 +314,7 @@ header {
 
 .more-line {
     height: 2px;
-    width: 714px;
+    width: 50%;
     background: #fff;
 }
 
@@ -747,7 +748,10 @@ footer {
 
     .section__background {
         padding: 134px 0 0;
-        background-size: 100% 90%;
+        background-size: 100% 100%;
+    }
+    .more-container{
+        justify-content: center;
     }
 
     .category__container {
@@ -779,14 +783,21 @@ footer {
     .more-line {
         display: none;
     }
+    .moreBtn{
+        margin: 20px 0 50px 0;
+    }
 
-    .moreBtn {
-        margin: 20px 54px 120px 0;
+    .category__context {
+        width: 80%;
     }
 }
+
 @media (max-width: 680px) {
-    
+    .section__background {
+        padding: 274px 0 0;
+    }
 }
+
 @media (max-width:620px) {
     #feedback {
         background-size: 120% 100%;
@@ -799,8 +810,40 @@ footer {
 }
 
 @media (max-width:550px) {
+    .section__background {
+        background-size: 130% 100%;
+    }
+
+    .category__container {
+        bottom: 290px;
+    }
+
     #feedback {
         background-size: 140% 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .section__background {
+        background-size: 180% 100%;
+    }
+
+    .category__container {
+        bottom: 790px;
+    }
+
+    .tracks__title {
+        font-size: 20px;
+    }
+    .track-btn {
+        margin: 20px 0;
+        border-radius: 0;
+        background: #B20A09;
+        padding: 8px 26px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 27px;
     }
 }
 
