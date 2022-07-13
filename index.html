@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Только CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./index.css">
 </head>
 
@@ -67,7 +70,113 @@
             </div>
         </div>
     </section>
-    <footer>
+    <section id="ourService">
+        <div class="section__container">
+            <div class="section__title">Наши услуги
+            </div>
+            <div class="title__underline"></div>
+        </div>
+        <div class="service-cards">
+            <div class="card card-bg  mb-3" style="max-width: 18rem;">
+                <div class="card-body text-dark">
+                    <h5 class="card-title first-card">Спец Техника</h5>
+                    <p class="card-text"> We have an architect for design new buildings
+                    </p>
+                </div>
+            </div>
+            <div class="card  mb-3" style="max-width: 18rem;">
+                <div class="card-header">
+                    <img src="./assets/img/spareparts.png" alt="card-logo">
+                </div>
+                <div class="card-body text-dark">
+                    <h5 class="card-title">Запчасти</h5>
+                    <p class="card-text"> We have an interior designer for design your perfect inside house
+                    </p>
+                </div>
+            </div>
+            <div class="card  mb-3" style="max-width: 18rem;">
+                <div class="card-header">
+                    <img src="./assets/img/service.png" alt="card-logo">
+                </div>
+                <div class="card-body text-dark">
+                    <h5 class="card-title">Услуги сервиса</h5>
+                    <p class="card-text"> We have an contractor for build new building from scratch
+
+                    </p>
+                </div>
+            </div>
+            <div class="card  mb-3" style="max-width: 18rem;">
+                <div class="card-header">
+                    <img src="./assets/img/consalting.png" alt="card-logo">
+                </div>
+                <div class="card-body text-dark">
+                    <h5 class="card-title">Услуги консалтинга</h5>
+                    <p class="card-text"> We can also renovate or rebuilds new buildings/house
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="category">
+        <div class="section__background">
+            <div class="category__container">
+            </div>
+            <div class="container__title">
+                <h1 class="category__title">Категории спец техники
+                </h1>
+                <div class="title__underline"></div>
+                <p class="category__context">
+                    Here our some of the best the result when we build some buildings, houses, and also interior designs
+                </p>
+            </div>
+            <div class="category__cards">
+                <div class="track-card">
+                    <img class="card-img-top" src="./assets/img/samosval.png" alt="Card image cap">
+                    <div class="track-card-body">
+                        <h5 class="tracks__title">Самосвалы</h5>
+                        <p class="tracks-text">3 Months work time</p>
+                        <a href="#" class="btn track-btn">Подробне</a>
+                    </div>
+                </div>
+                <div class="track-card">
+                    <img class="card-img-top" src="./assets/img/track2.png" alt="Card image cap">
+                    <div class="track-card-body">
+                        <h5 class="tracks__title">Тягочи</h5>
+                        <p class="tracks-text">3 Months work time</p>
+                        <a href="#" class="btn track-btn">Подробне</a>
+                    </div>
+                </div>
+                <div class="track-card">
+                    <img class="card-img-top" src="./assets/img/track3.png" alt="Card image cap">
+                    <div class="track-card-body">
+                        <h5 class="tracks__title">Автобетономешалки</h5>
+                        <p class="tracks-text">3 Months work time</p>
+                        <a href="#" class="btn track-btn">Подробне</a>
+                    </div>
+                </div>
+            </div>
+            <div class="more-container">
+                <div class="more-line"></div>
+                <button class="moreBtn">Еще</button>
+            </div>
+        </div>
+    </section>
+     <section id="feedback">
+        <div class="feedback__container">
+            <h1 class="feedback__title">
+                Хотите посмотреть?
+            </h1>
+            <form class="feedback_form" action="submit">
+                <input class="form-input" type="text" placeholder="Ваше Имя">
+                <input class="form-input" type="text" placeholder="Номер телефона">
+                <div class="textarea">
+                    <textarea class="form-textarea" cols="30" rows="10" placeholder="Комментарий"></textarea>
+                </div>
+            </form>
+            <button class="sendBtn">Отправить</button>
+        </div>
+    </section>
+   <!-- <footer>
         <div class="footer__container">
             <div class="container__logo">
                 <a href="#">
@@ -135,7 +244,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <script type="module" src="./index.js"></script>
 </body>
 
