@@ -269,6 +269,58 @@ header {
     height: 648px;
 }
 
+/* BreadCrumbs */
+#breadcrumbs {
+    margin: 38px 80px 112px;
+}
+
+.breadcrumb__container {
+    padding-left: 190px;
+    width: 100%;
+    display: flex;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    align-items: center;
+}
+
+.crumb {
+    list-style-type: none;
+}
+
+.crumb-f {
+    list-style-type: none;
+}
+
+.crumb-f a {
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+    line-height: 170%;
+    text-decoration: none;
+}
+
+.crumb a {
+    font-weight: 700;
+    font-size: 20px;
+    color: #2A2A2A;
+    line-height: 170%;
+    text-decoration: none;
+}
+
+.arrow {
+    margin-left: 16px;
+}
+
+.active {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 170%;
+    color: #B20A09;
+}
 
 @media (max-width:1020px) {
     .title-container {
