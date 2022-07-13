@@ -330,6 +330,82 @@ header {
     text-align: left;
 }
 
+
+/* FeedBack */
+
+#feedback {
+    background: url(../assets/img/fedback-bg.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    padding: 103px 0;
+    justify-content: center;
+}
+
+.feedback__container {
+    background: #F1BC0480;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 52px 30px;
+
+}
+
+.feedback__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 170%;
+    color: #FFFFFF;
+}
+
+.feedback_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    width: 48.8%;
+    padding-left: 22px;
+    height: 60px;
+}
+
+.form-input:nth-child(1) {
+    margin-right: 14px;
+}
+
+.form-input::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170%;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+
+.form-textarea {
+    padding: 14px 0 0 22px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.form-textarea::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170%;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.sendBtn {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    height: 72px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 34px;
+    width: 30%;
+}
+
 @media (max-width:1240px) {
     #category {
         margin: 30px 0 50px;
@@ -341,6 +417,88 @@ header {
 
     .category__container {
         top: 4px;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 134px;
+    background: #2A2A2A;
+    display: flex;
+    justify-content: center;
+    padding: 114px 0;
+}
+
+.footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-nav-item {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    margin-top: 15px;
+    list-style: none;
+}
+
+.footer__contact {
+    color: #fff;
+}
+
+.contact-item {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    margin-top: 15px;
+    list-style: none;
+}
+
+.social-networks {
+    margin-top: 20px;
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Adaptation */
+
+@media (max-width:1175px) {
+    .feedback__container {
+        align-items: center;
+    }
+
+    .form-input {
+        width: 40.8%;
+        padding-left: 22px;
+    }
+
+    .inputs {
+        display: flex;
+        justify-content: center;
+    }
+
+    .textarea {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-textarea {
+        width: 84%;
     }
 }
 
@@ -426,12 +584,39 @@ header {
     .section__background {
         padding: 444px 15px 0;
     }
+
+    #feedback {
+        padding: 80px 0;
+    }
+
+    .inputs {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .form-input {
+        width: 100%;
+    }
+
+    .form-textarea {
+        width: 100%;
+    }
+
+    .sendBtn {
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 90px;
+    }
 }
 
 @media(max-width: 865px) {
     .header__nav {
         position: fixed;
         top: 0;
+        z-index: 1;
+
         right: -100%;
         width: 100%;
         height: 100%;
@@ -599,127 +784,44 @@ header {
         margin: 20px 54px 120px 0;
     }
 }
+@media (max-width: 680px) {
+    
+}
+@media (max-width:620px) {
+    #feedback {
+        background-size: 120% 100%;
+    }
 
-/* FeedBack */
-
-#feedback {
-    background: url(../assets/img/fedback-bg.png) no-repeat;
-    background-size: 100% 100%;
-    display: flex;
-    align-items: center;
-    padding: 103px 257px;
-    justify-content: center;
+    .feedback__container {
+        width: 76%;
+        padding: 40px 30px;
+    }
 }
 
-.feedback__container {
-    background: #F1BC0480;
-    display: flex;
-    flex-direction: column;
-    padding: 52px 30px;
-
+@media (max-width:550px) {
+    #feedback {
+        background-size: 140% 100%;
+    }
 }
 
-.feedback__title {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 170%;
-    color: #FFFFFF;
-}
+@media (max-width:400px) {
+    #feedback {
+        background-size: 200% 100%;
+    }
 
+    .feedback__title {
+        font-size: 18px;
+    }
 
-.form-input {
-    width: 390px;
-    padding-left: 22px;
-    height: 60px;
-}
+    .form-input {
+        height: 46px;
+    }
 
-.form-input:nth-child(1) {
-    margin-right: 14px;
-}
+    .form-input::placeholder {
+        font-size: 14px;
+    }
 
-.form-input::placeholder {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 170%;
-    color: rgba(0, 0, 0, 0.25);
-}
-
-
-.form-textarea {
-    padding: 14px 0 0 22px;
-    margin: 20px 0;
-    width: 800px;
-}
-
-.form-textarea::placeholder {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 170%;
-    color: rgba(0, 0, 0, 0.25);
-}
-
-.sendBtn {
-    background: none;
-    border: 1px solid #fff;
-    color: #fff;
-    height: 72px;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 34px;
-    width: 30%;
-}
-
-/* FOOTER */
-
-footer {
-    margin-top: 134px;
-    background: #2A2A2A;
-    display: flex;
-    justify-content: center;
-    padding: 114px 0;
-}
-
-.footer__container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footer__nav a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.footer-nav-item {
-    font-family: 'Raleway';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.05em;
-    margin-top: 15px;
-    list-style: none;
-}
-
-.footer__contact {
-    color: #fff;
-}
-
-.contact-item {
-    font-family: 'Raleway';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.05em;
-    margin-top: 15px;
-    list-style: none;
-}
-
-.social-networks {
-    margin-top: 20px;
-    display: flex;
-    width: 80%;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    .form-textarea::placeholder {
+        font-size: 14px;
+    }
 }
