@@ -408,19 +408,6 @@ header {
     width: 30%;
 }
 
-@media (max-width:1240px) {
-    #category {
-        margin: 30px 0 50px;
-    }
-
-    .section__background {
-        padding: 284px 0 0;
-    }
-
-    .category__container {
-        top: 4px;
-    }
-}
 
 /* FOOTER */
 
@@ -478,6 +465,19 @@ footer {
 }
 
 /* Adaptation */
+@media (max-width:1240px) {
+    #category {
+        margin: 30px 0 50px;
+    }
+
+    .section__background {
+        padding: 284px 0 0;
+    }
+
+    .category__container {
+        top: 4px;
+    }
+}
 
 @media (max-width:1175px) {
     .feedback__container {
