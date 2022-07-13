@@ -59,27 +59,28 @@ header {
 }
 
 /* INTRO */
-.intro-background {
-    position: relative;
+#intro {
     background: #B20A09;
-    padding: 694px 0 0;
     transform: rotate(180deg);
     clip-path: polygon(75% 0, 100% 15%, 100% 100%, 0 100%, 0 22%);
+
+}
+
+.intro-background {
+    padding: 684px 0 0;
 }
 
 .intro__container {
     background: #2A2A2A;
     z-index: 0;
     position: absolute;
-    top: 96px;
+    top: 36px;
     width: 100%;
     right: 0;
-    transform: rotate(180deg);
     clip-path: polygon(75% 0, 100% 10%, 100% 100%, 0 100%, 0 17%);
 }
 
 .title-container {
-    margin: 0;
     position: absolute;
     bottom: 0;
     padding: 114px 124px;
@@ -561,15 +562,7 @@ footer {
 
 @media (max-width:920px) {
     .title-container {
-        margin: 0;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        transform: rotate(180deg);
         width: 80%;
-        flex-direction: column;
-        color: #FFFFFF;
-        z-index: 3;
     }
 
     .intro-title {
@@ -609,6 +602,10 @@ footer {
 
     footer {
         margin-top: 90px;
+    }
+
+    .social-networks {
+        margin: 20px 0 0 30px;
     }
 }
 
@@ -750,7 +747,8 @@ footer {
         padding: 134px 0 0;
         background-size: 100% 100%;
     }
-    .more-container{
+
+    .more-container {
         justify-content: center;
     }
 
@@ -783,7 +781,8 @@ footer {
     .more-line {
         display: none;
     }
-    .moreBtn{
+
+    .moreBtn {
         margin: 20px 0 50px 0;
     }
 
@@ -810,6 +809,35 @@ footer {
 }
 
 @media (max-width:550px) {
+    .intro__container {
+        position: static;
+    }
+
+    .intro-background {
+        padding: 34px 0 0;
+    }
+
+    .title-container {
+        padding: 82px 30px 0;
+    }
+
+    .intro-title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 58px;
+    }
+
+    .intro-btn {
+        margin-top: 74px;
+        font-size: 16px;
+        padding: 14px 34px;
+    }
+
+    .intro-bg img {
+        width: 100%;
+        height: 448px;
+    }
+
     .section__background {
         background-size: 130% 100%;
     }
@@ -835,6 +863,7 @@ footer {
     .tracks__title {
         font-size: 20px;
     }
+
     .track-btn {
         margin: 20px 0;
         border-radius: 0;
@@ -848,6 +877,16 @@ footer {
 }
 
 @media (max-width:400px) {
+    .intro-title {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .intro-btn {
+        margin-top: 68px;
+        padding: 10px 32px;
+    }
+
     #feedback {
         background-size: 200% 100%;
     }
