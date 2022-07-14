@@ -389,6 +389,10 @@ footer {
     justify-content: space-between;
 }
 
+.content-section {
+    width: 100%;
+}
+
 /* Adaptation */
 @media (max-width:1200px) {
     .manufacter {
@@ -417,6 +421,11 @@ footer {
 
     #breadcrumbs {
         margin: 38px 80px 80px;
+
+    }
+
+    .breadcrumb__container {
+        padding-left: 0px;
     }
 
     .content__container {
@@ -424,7 +433,6 @@ footer {
     }
 
     .about__section {
-        background: red;
         padding: 0;
     }
 
@@ -433,15 +441,16 @@ footer {
     }
 
     .content-cards {
+        width: 100%;
         justify-content: center;
-        background: yellow;
+        flex-direction: column;
         gap: 8px;
+        padding: 10px;
     }
 
     .track-card {
         margin-bottom: 30px;
-        background: pink;
-        width: 30%;
+        width: 100%;
     }
 
     .track-card-body {
@@ -637,16 +646,22 @@ footer {
 }
 
 @media (max-width:794px) {
+    .title-container {
+        padding: 0;
+    }
+
     .manufacter {
         font-size: 16px;
     }
-    .manufacter img{
+
+    .manufacter img {
         height: 18px;
         width: 18px;
     }
-.block{
-    height: 30px;
-}
+
+    .block {
+        height: 30px;
+    }
 }
 
 @media (max-width:550px) {
@@ -654,12 +669,24 @@ footer {
         position: static;
     }
 
+    #breadcrumbs {
+        margin: 38px 10px 40px 15px;
+    }
+
+    .breadcrumb {
+        gap: 6px;
+    }
+
     .intro-background {
         padding: 34px 0 0;
     }
 
+    .arrow {
+        margin-left: 2px;
+    }
+
     .title-container {
-        padding: 82px 30px 0;
+        padding: 0;
     }
 
     .intro-title {
@@ -696,8 +723,43 @@ footer {
         line-height: 42px;
     }
 
+    .manufacter {
+        flex-wrap: nowrap;
+        gap: 4px;
+        font-size: 13px;
+    }
+
+    .about__section {
+        gap: 13px;
+    }
+
+    .horsePower-item {
+        font-size: 13px;
+    }
+    .social-networks {
+        margin: 20px 0 0 0px;
+    }`
+
+    .manufacter img {
+        height: 14px;
+    }
+
+    .resetBtn {
+        margin: 0;
+        width: 100%;
+    }
+
     .intro-btn {
         margin-top: 68px;
         padding: 10px 32px;
+    }
+
+    .block {
+        height: 18px;
+    }
+
+    .horsePower {
+        flex-wrap: nowrap;
+        gap: 8px;
     }
 }

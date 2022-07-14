@@ -574,6 +574,10 @@ footer {
 }
 
 @media(max-width: 865px) {
+    .title-container {
+        padding: 0;
+    }
+
     .header__nav {
         position: fixed;
         top: 0;
@@ -896,7 +900,9 @@ footer {
     .section__background {
         background-size: 180% 100%;
     }
-
+    .title-container{
+        padding: 0;
+    }
     #faq {
         padding: 100px 15px;
     }
@@ -964,7 +970,8 @@ footer {
     .about__section {
         padding: 25px 5px 20px 5px;
     }
-    .diagnostik{
+
+    .diagnostik {
         font-size: 10px;
     }
 
